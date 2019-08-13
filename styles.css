@@ -1,0 +1,569 @@
+*{
+    margin:0;
+    color:white;
+    font-family:source sans pro, serif;
+}
+
+body{
+    background-color:#1b1b1c;
+    height:100%;
+    width:100%;
+}
+
+#navbar{
+    background-color:black;
+    height:100%;
+    width:10%;
+    position:relative;
+    display:inline-block;
+}
+
+#wrapper{
+    height:100%;
+    width:90%;
+    overflow: hidden;
+    position:relative;
+}
+
+#header{
+    height:10%;
+    width:85%;
+    margin:auto;
+    border-bottom: solid white 1.2px;
+    padding-bottom:1.3vw;
+}
+
+#colorbar{
+    background-color: #f3902b;
+}
+
+#fwtitle{
+    font-weight:300;   
+}
+
+#subject{
+    font-weight:600;
+}
+
+#aquariumnav{
+    height:8vw;
+}
+
+.aquaicon{
+    height:10vw;
+    transition-duration:.5s;
+}
+
+#description{
+    font-weight:300;
+}
+
+#ovlyintaqua{
+    position:absolute;
+    top:0px;
+    transition-duration:.3;
+    display:none;
+    
+}
+ 
+
+@media only screen and (max-width: 768px) {
+    
+    
+    
+    @keyframes swim {
+      0%   {top:15vw;}
+      50%  {top:14vw;}
+      100% {top:15vw;}
+    }
+    
+    @keyframes swim2 {
+      0%   {top:20.5vw;}
+      50%  {top:19.5vw;}
+      100% {top:20.5vw;}
+    }
+    
+    @keyframes updown {
+        0% {transform: rotate(0deg);}
+        25% {transform: rotate(-5deg)}    
+        50% {transform:rotate(0deg);}
+        75% {transform: rotate(5deg)} 
+        100% {transform:rotate(0deg);}
+    }
+
+    #navbar{
+        width:100%;
+        height: 11vw;
+    }
+    
+    #wrapper{
+        width:100%;
+    }
+    
+    #fwlogo{
+        height:7vw;
+        margin:2vw 7.5vw;
+    }
+    
+    #colorbar{    
+        margin: 1vw 0vw;
+        height:1vw;
+        width: 29.5vw;
+    }
+    
+    #fwtitle{
+        font-size:4.25vw;
+        line-height: 3vw;
+        margin-bottom: 1vw;
+    }
+    
+    #subject{
+        font-size:8.8vw;
+        line-height:8.5vw;
+    }
+    
+    #aquariumnav{
+        margin:1.5vw 0vw;
+        text-align:center;
+        width:100%;
+    }
+    
+    .aquaicon{
+        width:7vw;
+        height:7vw;
+        line-height: 7vw;
+        display:inline-block;
+        text-align:center;
+    }
+    
+    #aquasic{height: 4vw;} #wateric{height: 5vw;} #filteric{height: 5vw;} #lightic{height: 5.5vw;} #fishic{height: 5.5vw;} #subsic{height: 6vw;} #rockic{height: 5vw;} #woodic{height: 5.5vw;} #plantic{height:5.5vw;} #co2ic{height: 5.5vw;}
+    
+    .icon{
+        vertical-align: middle;
+        opacity: 0.5;
+    }
+    
+    #intaqua{
+        margin-top:4vw;
+        height:64vw;
+        width:100%;
+        position: relative;
+    }
+    
+    #light{
+        width:31vw;
+        display:block;
+        padding-bottom:3.5vw;
+        margin:auto;
+    }
+
+    #glass{
+        height:21.4vw;
+        position: absolute;
+        left:30.7vw;
+    }
+        
+    #water{
+        width:39vw;
+        position: absolute;
+        left:30.5vw;
+        margin:auto;
+        top:13.6vw;
+    }
+    
+    #rock{
+        height:15vw;
+        position: absolute;
+        top:17.9vw;
+        left:40vw;
+    }
+
+    #plant01{
+        height:7.5vw;
+        position: absolute;
+        top:24vw;
+        left:52.5vw;
+    }
+
+    #plant02{
+        height:12.6vw;
+        position: absolute;
+        top:18.5vw;
+        left:36vw;
+    }
+    
+    #substrate{
+        width:39vw;
+        position: absolute;
+        top:30.4vw;
+        left:30.5vw;
+    }
+
+    #discus01{
+        height:6vw;
+        top:15vw;
+        left:52.5vw;
+        position: absolute;
+        transform:rotate(-5deg);
+        animation-name:swim, updown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    #discus02{
+        height:6vw;
+        top:20.5vw;
+        left:57.9vw;
+        position: absolute;
+        transform:rotate(-5deg);
+        animation-name:swim2, updown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .5s;
+    }
+    
+    #heater{
+        height:15vw;
+        position: absolute;
+        top: 11vw;
+        left: 34vw;
+    }
+    
+    #intake{
+        top: 10.8vw;
+        left: 28.1vw;
+        height:13vw;
+        position: absolute;
+    }
+    
+    #output{
+        height:6.5vw;
+        left: 65.6vw;
+        top: 10.8vw;
+        position: absolute;
+    }
+    
+    #glassref{
+        height:21.4vw;
+        position: absolute;
+        left:32vw;
+    }
+    
+    #aquarium{
+        height:50.1vw;
+        position:absolute;
+        top:12vw;
+        left:30vw;
+    }
+    
+    #diffuseline{
+        height:44.53vw;
+        top: 16.3vw;
+        left: 44.7vw;
+        position: absolute;
+    }
+    
+    #outline{
+        top: 16vw;
+        left: 28.45vw;
+        height:27.7vw;
+        position: absolute;
+    }
+    
+    #co2can{
+        height:25vw;
+        position: absolute;
+        top:35.8vw;
+        left: 52.5vw;
+    }
+
+    #filter{
+        height:18vw;
+        position: absolute;
+        top:43vw;
+        left:34.5vw;
+    }
+    
+    #intoDesc{
+        display:none;
+        
+    }
+    
+    #description{
+        text-align: center;
+        font-size: 3.9vw;
+        width:76vw;
+        margin:auto;
+        padding-top: 9vw;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+#navbar{
+    background-color:black;
+    height:100%;
+    width:9.8%;
+    position:absolute;
+    display:inline-block;
+}
+
+#fwlogo{
+    width:30%;
+    display:block;
+    margin:auto;
+    margin-top: 2vw;
+}
+
+#wrapper{
+    height:100%;
+    width:88%;
+    left:12%;
+    display:inline;
+    position:absolute;
+}
+
+#header{
+    height:6vw;
+    width:70%;
+    border-bottom: solid white 1.2px;
+    padding-bottom:1.3vw;
+    display:inline-block;
+}
+
+#colorbar{
+    background-color: #f3902b;
+    height:.3vw;
+    width:10.25vw;
+}
+
+#fwtitle{
+    font-weight:300;
+    font-size:1.47vw;
+    margin-top:.2vw;
+    margin-bottom:.2vw;
+}
+
+#subject{
+    font-weight:600;
+    font-size:3.7vw;
+    border-top: solid .14vw;
+    width:42.1vw;
+    line-height: 4.3vw;
+}
+
+#aquariumnav{
+    height:5%;
+    position:relative;
+    display:block;
+    margin:.7vw 0vw;
+}
+
+.aquaicon{
+    display:inline-block;
+    height:2.55vw;
+    width:2.55vw;
+    text-align: center;
+    line-height: 2.5vw;
+}
+
+#aquasic{height: 1.3vw;} #wateric{height: 1.625vw;} #filteric{height: 1.625vw;} #lightic{height: 1.7875vw;} #fishic{height: 1.7875vw;} #subsic{height: 1.95vw;} #rockic{height: 1.624vw;} #woodic{height: 1.7875vw;} #plantic{height:1.7875vw;} #co2ic{height: 1.7875vw;}
+
+.icon{
+    vertical-align: middle;
+    opacity: .5;
+    transition-duration:.5s;
+}
+
+#intaqua{
+    width:28.6vw;
+    height:35vw;
+    position:relative;
+    display:inline-block;
+}
+
+    #light{
+        width:15vw;
+        display:block;
+        padding-bottom:3.5vw;
+        margin:auto;
+        transition-duration:.5s;
+        position:relative;
+    }
+
+    #glass{
+        height:10.35vw;
+        position: absolute;
+        top:5.5vw;
+        left:4.8vw;
+    }
+        
+    #water{
+        width:18.87vw;
+        position: absolute;
+        left:4.7vw;
+        top:6.2vw;
+    }
+    
+    #rock{
+        height:7.26vw;
+        position: absolute;
+        top:8.2vw;
+        left:9.5vw;
+    }
+
+    #plant01{
+        height:3.63vw;
+        position: absolute;
+        top:11.3vw;
+        left:15.6vw;
+    }
+
+    #plant02{
+        height:6.1vw;
+        position: absolute;
+        top:8.5vw;
+        left:7.5vw;
+    }
+    
+    #substrate{
+        width:18.87vw;
+        position: absolute;
+        top:14.3vw;
+        left:4.7vw;
+    }
+    
+    @keyframes swim {
+      0%   {top:7.5vw;}
+      50%  {top:7vw;}
+      100% {top:7.5vw;}
+    }
+    
+    @keyframes swim2 {
+      0%   {top:10.7vw;}
+      50%  {top:10vw;}
+      100% {top:10.7vw;}
+    }
+    
+    @keyframes updown {
+        0% {transform: rotate(0deg);}
+        25% {transform: rotate(-5deg)}    
+        50% {transform:rotate(0deg);}
+        75% {transform: rotate(5deg)} 
+        100% {transform:rotate(0deg);}
+    }
+    
+    #discus01{
+        height:2.9vw;
+        top:7.5vw;
+        left:15.5vw;
+        position: absolute;
+        transform:rotate(-5deg);
+        animation-name:swim, updown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    #discus02{
+        height:2.9vw;
+        top:9.7vw;
+        left:18.3vw;
+        position: absolute;
+        transform:rotate(-5deg);
+        animation-name:swim2, updown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .5s;
+    }
+    
+    #heater{
+        height:7.26vw;
+        position: absolute;
+        top: 4.6vw;
+        left: 6.4vw;
+    }
+    
+    #intake{
+        top: 4.8vw;
+        left: 3.54vw;
+        height:6.29vw;
+        position: absolute;
+    }
+    
+    #output{
+        height:3.15vw;
+        left: 21.7vw;
+        top: 4.8vw;
+        position: absolute;
+    }
+    
+    #glassref{
+        height:10.35vw;
+        position: absolute;
+        top:5.5vw;
+        left:5.8vw;
+    }
+    
+    #aquarium{
+        height:24.24vw;
+        position:absolute;
+        top:5.4vw;
+        left:4.5vw;
+    }
+    
+    #diffuseline{
+        height:21.55vw;
+        top: 7.5vw;
+        left: 11.55vw;
+        position: absolute;
+    }
+    
+    #outline{
+        top: 7.35vw;
+        left: 3.65vw;
+        height:13.4vw;
+        position: absolute;
+    }
+    
+    #co2can{
+        height:12.1vw;
+        position: absolute;
+        top:17vw;
+        left: 15.34vw;
+    }
+
+    #filter{
+        height:8.71vw;
+        position: absolute;
+        top:20.4vw;
+        left:6.55vw;
+    }
+        
+    #description{
+        border-left:solid white;
+        padding-top:.7vw;
+        padding-left:3vw;
+        height:15vw;
+        width:28vw;
+        position:absolute;
+        display:inline-block;
+        margin-left:2vw;
+        margin-top:5vw;
+    }
+    
+    #intoDesc{
+        font-size:1.6vw;
+    }
+    
+    #bioChem{
+        line-height: 3.5vw;
+        font-size:3.4vw;
+    }
+    
+    #maindesc{
+        margin-top:1.7vw;
+        font-size:1.2vw;
+        font-weight:400;
+        line-height:1.4vw;
+    }
+}
